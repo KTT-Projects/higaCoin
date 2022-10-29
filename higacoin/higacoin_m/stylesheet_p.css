@@ -1,0 +1,11 @@
+* {
+  font-family: 'Kaisei HarunoUmi', serif;
+  transition: all .5s;
+  color: #22181C;
+  margin: 0;
+}
+
+p {
+  margin-top: 13px;
+  text-align: center;
+}

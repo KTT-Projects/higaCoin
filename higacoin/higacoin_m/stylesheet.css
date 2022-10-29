@@ -1,0 +1,753 @@
+* {
+  font-family: 'Kaisei HarunoUmi', serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #22181C;
+}
+
+body {
+  background-color: #5A0001;
+}
+
+main {
+  width: 900px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+img {
+  display: block;
+  width: 500px;
+  margin: 0 auto;
+  filter: drop-shadow(5px 5px 5px #000);
+}
+
+form:not(.mes_trade, .agree_form) {
+  text-align: center;
+  margin: 100px;
+}
+
+.invite {
+  display: block;
+  width: 80%;
+  border: none;
+  background-color: #F6E8EA;
+  text-align: center;
+  margin: 0 auto;
+  height: 50px;
+  border-radius: 10px;
+  transition: all .5s;
+}
+
+.submit {
+  color: #22181C;
+  width: 40%;
+  border: none;
+  background-color: #F6E8EA;
+  text-align: center;
+  height: 50px;
+  border-radius: 10px;
+  margin-top: 30px;
+  cursor: pointer;
+  font-size: 15px;
+  margin-bottom: 30px;
+  transition: all .5s;
+}
+
+.f {
+  margin-top: 10px;
+}
+
+.f_1 {
+  margin-top: 30px;
+}
+
+.error_message {
+  color: #F6E8EA;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.background {
+  background-image: url(./image.jpg);
+  box-shadow: inset 0 0 15px 30px #5A0001;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-size: cover;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f6e8eacc;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  height: 50px;
+  border-radius: 10px;
+  transition: all .5s;
+}
+
+li {
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  font-size: 18px;
+  list-style: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+h3 a {
+  position: fixed;
+  right: 150px;
+  top: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+h3 a:hover, li:hover {
+  color: #5A0001;
+  font-size: 16px;
+}
+
+.logo {
+  font-size: 18px;
+  position: fixed;
+  color: #5A0001;
+  left: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+
+#content {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 200px;
+  background-color: #F6E8EA;
+  overflow: scroll;
+}
+
+.bitcoin_data {
+  color: #22181C;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+
+.amount {
+  display: none;
+  position: absolute;
+  top: 80px;
+  left: 230px;
+  width: 150px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: #F6E8EA;
+}
+
+.submit_amount {
+  display: none;
+  position: absolute;
+  top: 80px;
+  left: 390px;
+  width: 100px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: #F6E8EA;
+  cursor: pointer;
+}
+
+#open_buy {
+  position: absolute;
+  top: 10px;
+  left: 250px;
+  border: none;
+  border-radius: 10px;
+  width: 200px;
+  height: 50px;
+  cursor: pointer;
+  background-color: #F6E8EA;
+  transition: all .5s;
+}
+
+#open_buy:hover, .submit:hover, .bet_s:hover, .bet_s2:hover, .submit_sell:hover, .submit_amount:hover, .fold:hover, .fold_2:hover, .money:hover, .invite:hover:not(.no_animation) {
+  background-color: #5A0001;
+  color: #F6E8EA;
+  border: solid 3px #F6E8EA;
+}
+
+.submit_sell {
+  position: absolute;
+  top: 10px;
+  left: 250px;
+  border: none;
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #F6E8EA;
+  transition: all .5s;
+}
+
+.money {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 15px;
+  background-color: #F6E8EA;
+  border-radius: 10px;
+  width: 180px;
+  height: 50px;
+  text-align: center;
+  background-color: #F6E8EA;
+  transition: all .5s;
+}
+
+.bitcoin_log {
+  width: 100%;
+  margin-top: 150px;
+  overflow: scroll;
+}
+
+.log {
+  padding: 10px 30px;
+  margin-top: 20px;
+  text-align: left;
+  width: 80%;
+  margin-left: 15%;
+  margin-right: 5%;
+  border-top: solid 5px #f6e8ea3c;
+  border-radius: 5px;
+  line-height: 30px;
+}
+
+.log_message {
+  margin-top: 150px;
+}
+
+.logout_message {
+  margin-bottom: 30px;
+}
+
+#profit {
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  left: 480px;
+  border: none;
+  border-radius: 10px;
+  width: 200px;
+  height: 50px;
+  background-color: #F6E8EA;
+  display: none;
+}
+
+.profit_number {
+  margin-top: 13px;
+  text-align: center;
+}
+
+.games {
+  width: 70%;
+  margin-bottom: 20px;
+}
+
+.poker_name {
+  margin-bottom: 50px;
+  margin-top: 10px;
+}
+
+.player_1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  background-color: #22181C;
+}
+
+.player_2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  background-color: #F6E8EA;
+}
+
+.player_2_message {
+  color: #22181C;
+}
+
+.end {
+  margin-top: 500px;
+  cursor: pointer;
+}
+
+.black {
+  background-color: #22181C;
+  color: #F6E8EA;
+}
+
+.black_s {
+  cursor: pointer;
+}
+
+.home {
+  background-color: #22181C;
+  color: #F6E8EA;
+  font-size: 13px;
+  margin-top: 625px;
+  width: 60%;
+}
+
+.ranking_cover {
+  margin-top: 100px;
+}
+
+.ranking {
+  margin-top: 30px;
+}
+
+.p1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  background-color: #22181C;
+}
+
+.p2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  background-color: #F6E8EA;
+}
+
+.amount_game {
+  position: absolute;
+  top: 0;
+  left: 5px;
+}
+
+.amount_game_2 {
+  position: absolute;
+  top: 0;
+  right: 5px;
+}
+
+.higacoin_game {
+  position: absolute;
+  top: 0;
+  right: 5px;
+}
+
+.higacoin_game_2 {
+  position: absolute;
+  top: 0;
+  left: 5px;
+}
+
+.user_trump {
+  display: none;
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  height: 280px;
+  width: 200px;
+  cursor: alias;
+}
+
+.trump-cover {
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  height: auto;
+  width: 200px;
+  cursor: alias;
+}
+
+.user_trump_2 {
+  display: none;
+  position: absolute;
+  top: 100px;
+  left: 300px;
+  height: 280px;
+  width: 200px;
+  cursor: alias;
+}
+
+.trump-cover_2 {
+  position: absolute;
+  top: 100px;
+  left: 300px;
+  height: auto;
+  width: 200px;
+  cursor: alias;
+}
+
+.user_trump_4 {
+  display: none;
+  position: absolute;
+  top: 100px;
+  right: 300px;
+  height: 280px;
+  width: 200px;
+  cursor: alias;
+}
+
+.trump-cover_4 {
+  position: absolute;
+  top: 100px;
+  right: 300px;
+  height: auto;
+  width: 200px;
+  cursor: alias;
+}
+
+.user_trump_3 {
+  display: none;
+  position: absolute;
+  top: 100px;
+  right: 50px;
+  height: 280px;
+  width: 200px;
+  cursor: alias;
+}
+
+.trump-cover_3 {
+  position: absolute;
+  top: 100px;
+  right: 50px;
+  height: auto;
+  width: 200px;
+  cursor: alias;
+}
+
+.bet {
+  position: absolute;
+  text-align: center;
+  bottom: 170px;
+  right: 50px;
+  height: 50px;
+  width: 200px;
+  font-size: 13px;
+  border-radius: 10px;
+  border: none;
+  color: #22181C;
+  background-color: #F6E8EA;
+}
+
+.bet_s {
+  position: absolute;
+  bottom: 100px;
+  right: 50px;
+  height: 50px;
+  width: 200px;
+  font-size: 13px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+  color: #22181C;
+  background-color: #F6E8EA;
+  transition: all .5s;
+}
+
+.bet2 {
+  position: absolute;
+  text-align: center;
+  bottom: 170px;
+  left: 50px;
+  height: 50px;
+  width: 200px;
+  font-size: 13px;
+  border-radius: 10px;
+  border: none;
+  color: #F6E8EA;
+  background-color: #22181C;
+}
+
+.bet_s2 {
+  position: absolute;
+  bottom: 100px;
+  left: 50px;
+  height: 50px;
+  width: 200px;
+  font-size: 13px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+  color: #F6E8EA;
+  background-color: #22181C;
+  transition: all .5s;
+}
+
+.ok {
+  width: 100px;
+  position: absolute;
+  bottom: 300px;
+  left: -50px;
+  border: solid 3px #22181C;
+  cursor: pointer;
+}
+
+.area_trump {
+  height: 280px;
+  width: 200px;
+  margin-left: 50px;
+  margin-top: 30px;
+  float: left;
+}
+
+label {
+  color: #F6E8EA;
+}
+
+.pairs {
+  position: absolute;
+  bottom: 0;
+  right: -50px;
+}
+
+.checks {
+  margin-right: 10px;
+}
+
+.pairs2 {
+  position: absolute;
+  bottom: 0;
+  left: -50px;
+}
+
+.checks2 {
+  margin-right: 10px;
+}
+
+.pair_2 {
+  color: #22181C !important;
+}
+
+.inv_2 {
+  color: #F6E8EA;
+  background-color: #22181C;
+}
+
+.pl2 {
+  color: #22181C;
+  position: absolute;
+  bottom: 170px;
+  left: 65px;
+}
+
+.pl1 {
+  color: #F6E8EA;
+  position: absolute;
+  bottom: 170px;
+  right: 65px;
+}
+
+.ignore {
+  width: 100px;
+}
+
+.message {
+  float: left;
+  color: #F6E8EA;
+  height: 100px;
+  width: 50%;
+  background-color: #22181C;
+  text-align: center;
+}
+
+.win_message {
+  text-align: center;
+  color: #F6E8EA;
+}
+
+.end_message {
+  cursor: pointer;
+}
+
+.fold {
+  position: absolute;
+  text-align: center;
+  bottom: 240px;
+  right: 50px;
+  height: 50px;
+  width: 200px;
+  font-size: 13px;
+  border-radius: 10px;
+  border: none;
+  color: #22181C;
+  background-color: #F6E8EA;
+  cursor: pointer;
+  transition: all .5s;
+}
+
+.fold_2 {
+  position: absolute;
+  text-align: center;
+  bottom: 240px;
+  left: 50px;
+  height: 50px;
+  width: 200px;
+  font-size: 13px;
+  border-radius: 10px;
+  border: none;
+  color: #F6E8EA;
+  background-color: #22181C;
+  cursor: pointer;
+  transition: all .5s;
+}
+
+b {
+  letter-spacing: 5px;
+}
+
+.bitcoin {
+  width: 80%;
+  margin-bottom: 80px;
+}
+
+.mes {
+  width: 80%;
+}
+
+.mes_trade {
+  width: 20%;
+  position: absolute;
+  top: 60px;
+  border-radius: 10px;
+  left: 0;
+  background-color: #f6e8eacc;
+}
+
+.send {
+  margin-top: 10px;
+}
+
+.send_s {
+  cursor: pointer;
+  margin-bottom: 50px;
+}
+
+.mes_area {
+  overflow: scroll;
+  width: 59%;
+  position: absolute;
+  top: 60px;
+  border-radius: 10px;
+  right: 20%;
+  background-color: #f6e8eacc;
+}
+
+.mes_header {
+  background-color: #F6E8EA;
+}
+
+.log_mes {
+  color: #22181C;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
+  padding-bottom: 15px;
+  border-bottom: solid 3px #22181C;
+  border-radius: 5px;
+  width: 100% - 20px;
+}
+
+.agree {
+  font-weight: 900;
+  color: #5A0001;
+}
+
+.agreed {
+  font-weight: 900;
+  color: rgb(88, 150, 84);
+}
+
+.waiting {
+  margin-top: 10px;
+  margin-right: 10px;
+  width: 100%;
+  border-radius: 5px;
+  border-bottom: solid 3px #22181C;
+  margin-bottom: 20px;
+}
+
+.wait_name {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.submit_agree {
+  display: block;
+  margin: 0 auto;
+  background-color: #F6E8EA;
+  border: none;
+  width: 50%;
+  font-size: 15px;
+  height: 30px;
+  border-radius: 10px;
+  color: #22181C;
+  transition: all .5s;
+  cursor: pointer;
+}
+
+.submit_agree:hover {
+  color: #F6E8EA;
+  background-color: #5A0001;
+  border: solid 3px #F6E8EA;
+}
+
+.sub_area {
+  position: absolute;
+  background-color: #f6e8eacc;
+  border-radius: 10px;
+  top: 60px;
+  right: 0;
+  width: 19%;
+  overflow: scroll;
+}
+
+.submit_disagree {
+  display: block;
+  margin: 10px auto;
+  background-color: #F6E8EA;
+  border: none;
+  width: 50%;
+  font-size: 15px;
+  height: 30px;
+  border-radius: 10px;
+  color: #22181C;
+  transition: all .5s;
+  cursor: pointer;
+}
+
+.submit_disagree:hover {
+  color: #F6E8EA;
+  background-color: #5A0001;
+  border: solid 3px #F6E8EA;
+}
+
+.animation {
+  transition: all .3s;
+  font-size: 18px;
+}
+
+.animation:hover {
+  font-size: 16px;
+  color: #22181C;
+}
